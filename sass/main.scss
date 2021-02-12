@@ -1,0 +1,84 @@
+$primary: #ffcc00;
+// Bootstrap
+// Podemos importar TODAS las clases de Bootstrap de esta forma con SCSS
+@import "../bootstrap-source-files/scss/bootstrap";
+/*
+BODY
+font-family: 'Nunito', sans-serif;
+ */
+
+/*
+ENCABEZADOS DE CATEGORIAS
+font-family: 'Fredoka One', cursive;
+ */
+
+/*
+ENCABEZADOS PARA NOMBRES DE PRODUCTOS
+font-family: 'Domine', serif;
+ */
+
+/*
+NAV
+font-family: 'Space Mono', monospace;
+ */
+
+body{
+	font-family: 'Domine', sans-serif;
+	font-weight: 300;
+	margin-top: 40px;
+}
+footer{
+	font-family: 'Dosis', sans-serif;
+	font-size: 20px;
+	width: 100%;
+}
+.nav-footer{
+		.item-nav{
+		a:hover{
+		color: black;
+	}
+	}
+}
+
+header{
+	font-family: 'Dosis', sans-serif;
+	font-size: 20px;
+	img{
+		background-position: center;
+		background-size: cover;
+	}
+	.item-nav{
+		a:hover{
+		color: black;
+	}
+	}
+	.menu-cat{
+		a:hover{
+		color: $primary;
+		background: none;
+	}
+	}
+	
+}
+
+.row{
+	margin-bottom: 20px;
+}
+
+.barra-nav{
+	font-family: 'Dosis', sans-serif;
+	font-size: 20px;
+	.item-nav{
+		a:hover{
+		color: whitesmoke;
+		background-color: $primary;
+	}
+}
+}
+
+.title-mercado{
+	font-family: 'Fredoka One', sans-serif;
+	color: $dark;
+}
+
+
