@@ -34,9 +34,10 @@
 <body>
 	<header>
 		<div class="container text-primary">
+
 			<div class="row justify-content-lg-between justify-content-center py-3 align-items-center">
 				<div class="col col-auto order-2 order-lg-1">
-					<ul class="nav nav-tabs nav-fill pt-2">
+					<ul class="nav nav-tabs nav-fill pt-3 pt-md-2">
 						<li class="item-nav nav-item">
 							<a href="#inicio" class="nav-link active">Inicio</a>
 						</li>
@@ -49,13 +50,13 @@
 					</ul>
 				</div>
 
-				<div class="col-12 col-lg text-center col-auto order-1 order-lg-2">
+				<div class="col-12 col-lg text-center col-auto order-1 order-lg-2 py-0 my-0">
 					<a id="inicio" href="#"><img class="img-fluid" src="img/icon/logo.png" alt="Mercado"></a>
 				</div>
 
 				<div class="col col-auto order-3 order-lg-3">
-					<ul class="nav nav-tabs nav-fill">
-						<li class="item-nav nav-item dropdown">
+					<ul class="nav nav-tabs nav-fill pt-md-2">
+						<li class="item-nav nav-item dropdown d-none d-md-block">
 							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categorías</a>
 							<div class="menu-cat dropdown-menu">
 								<a class="dropdown-item" href="#c_verduras">Verduras</a>
@@ -164,19 +165,19 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group label-floating">
-                                    <label class="control-label">Nombre  <i class="bi bi-person" style="font-size: 1.5rem; color: cornflowerblue;"></i></label>
+                                    <label class="control-label">Nombre  <i class="bi bi-person d-none d-lg-inline-flex align-middle" style="font-size: 1.5rem; color: cornflowerblue;"></i></label>
                                     <input type="text" class="form-control" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group label-floating">
-                                    <label class="control-label">Correo electrónico  <i class="bi bi-envelope-fill" style="font-size: 1.5rem; color: cornflowerblue;"></i></label>
+                                    <label class="control-label">Correo electrónico  <i class="bi bi-envelope-fill d-none d-lg-inline-flex align-middle" style="font-size: 1.5rem; color: cornflowerblue;"></i></label>
                                     <input type="email" class="form-control" required>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="form-check text-left my-3 d-none d-lg-flex">
+                        <div class="form-check text-left my-3 d-none d-md-flex">
 		                      <label class="form-check-label">
 		                        <input class="form-check-input" type="checkbox">
 		                        <span class="form-check-sign"></span>
@@ -188,7 +189,9 @@
                         <div class="row">
                             <div class="col">
                                 <button class="btn btn-primary btn-raised">
-                                    Recibir ofertas y promociones <i class="bi bi-emoji-heart-eyes-fill" style="font-size: 1.2rem;"></i>
+                                	<span class="d-none d-md-inline-flex">Recibir ofertas y promociones </span>
+                                    <i class="bi bi-emoji-heart-eyes-fill d-none d-md-inline-flex align-middle" style="font-size: 1.2rem;"></i>
+                                    <span class="d-flex d-md-none">Recibir correos</span>
                                 </button>
                             </div>
                         </div>
@@ -200,25 +203,26 @@
             </section>
 
             <section id="categorias" class="categories">
-	            	<section class="row">
-	            		<h2 class="col-12 text-center text-danger border-bottom py-3 mb-4">Echale un vistazo a nuestras categorías</h2>
+            	<h2 class="col-12 text-center text-danger border-bottom py-3 mb-4">Echale un vistazo a nuestras categorías</h2>
+	            	<section class="row row-cols-1 row-cols-md-2">
+	            		
 	            	<div class="col-6">
-		            	<div class="card mb-3" id="c_verduras">
+		            	<div class="card mb-3 h-100" id="c_verduras">
 						  <img src="img/category/verduras_c.jpg" class="card-img-top" alt="Verduras">
 						  <div class="card-body">
 						    <h5 class="card-title">Verduras</h5>
 						    <p class="card-text d-none d-md-block">Debemos orientar nuestra alimentación hacia un consumo mayor de verduras, aquí encontrarás una gran variedad.</p>
-						    <p class="card-text"><a href="#" class="btn btn-warning">Ver más de esto <span class="material-icons md-18 align-middle">search</span></a></p>
+						    <p class="card-text"><a href="#" class="btn btn-warning">Ver más <span class="d-none d-md-inline-flex">de esto </span><span class="material-icons md-18 align-middle d-none d-md-inline-flex">search</span></a></p>
 						  </div>
 						</div>
 					</div>
 					<div class="col-6">
-		            	<div class="card mb-3" id="c_frutas">
+		            	<div class="card mb-3 h-100" id="c_frutas">
 						  <img src="img/category/frutas_c.jpg" class="card-img-top" alt="Frutas">
 						  <div class="card-body">
 						    <h5 class="card-title">Frutas</h5>
 						    <p class="card-text d-none d-md-block">Conoce nuestro conjunto de frutos comestibles que se obtienen de plantas cultivadas o silvestres.</p>
-						    <p class="card-text"><a href="#" class="btn btn-warning">Ver más de esto <span class="material-icons md-18 align-middle">search</span></a></p>
+						    <p class="card-text"><a href="#" class="btn btn-warning">Ver más <span class="d-none d-md-inline-flex">de esto </span><span class="material-icons md-18 align-middle d-none d-md-inline-flex">search</span></a></p>
 						  </div>
 						</div>
 					</div>
@@ -226,22 +230,22 @@
 
 					 <section class="row">
 		            	<div class="col-6">
-			            	<div class="card mb-3" id="c_carnes">
+			            	<div class="card mb-3 h-100" id="c_carnes">
 							  <img src="img/category/carnes_c.jpg" class="card-img-top" alt="Carnes">
 							  <div class="card-body">
 							    <h5 class="card-title">Carnes</h5>
 							    <p class="card-text d-none d-md-block">Date unos mínutos y ve los distintos tipos de carne blanca y roja (como la de res), las cuales encontraras aquí.</p>
-							    <p class="card-text"><a href="#" class="btn btn-warning">Ver más de esto <span class="material-icons md-18 align-middle">search</span></a></p>
+							    <p class="card-text"><a href="#" class="btn btn-warning">Ver más <span class="d-none d-md-inline-flex">de esto </span><span class="material-icons md-18 align-middle d-none d-md-inline-flex">search</span></a></p>
 							  </div>
 							</div>
 						</div>
 						<div class="col-6">
-			            	<div class="card mb-3" id="c_pollo">
+			            	<div class="card mb-3 h-100" id="c_pollo">
 							  <img src="img/category/pollo-fresco-c.jpg" class="card-img-top" alt="Pollo">
 							  <div class="card-body">
 							    <h5 class="card-title">Pollo</h5>
 							    <p class="card-text d-none d-md-block">Podrás conseguir todo alimento relacionado al pollo, tal como la pechuga o nuggets de pollo.</p>
-							    <p class="card-text"><a href="#" class="btn btn-warning">Ver más de esto <span class="material-icons md-18 align-middle">search</span></a></p>
+							    <p class="card-text"><a href="#" class="btn btn-warning">Ver más <span class="d-none d-md-inline-flex">de esto </span><span class="material-icons md-18 align-middle d-none d-md-inline-flex">search</span></a></p>
 							  </div>
 							</div>
 						</div>
@@ -250,22 +254,22 @@
             
 		            <section class="row">
 		            	<div class="col-6">
-			            	<div class="card mb-3" id="c_pan">
+			            	<div class="card mb-3 h-100" id="c_pan">
 							  <img src="img/category/pan_c.jpg" class="card-img-top" alt="Pan">
 							  <div class="card-body">
 							    <h5 class="card-title">Pan</h5>
 							    <p class="card-text d-none d-md-block">El pan es un alimento esencial en muchas sociedades, como la nuestra, donde existe una gran variedad.</p>
-							    <p class="card-text"><a href="#" class="btn btn-warning">Ver más de esto <span class="material-icons md-18 align-middle">search</span></a></p>
+							    <p class="card-text"><a href="#" class="btn btn-warning">Ver más <span class="d-none d-md-inline-flex">de esto </span><span class="material-icons md-18 align-middle d-none d-md-inline-flex">search</span></a></p>
 							  </div>
 							</div>
 						</div>
 						<div class="col-6">
-			            	<div class="card mb-3" id="c_pescado">
+			            	<div class="card mb-3 h-100" id="c_pescado">
 							  <img src="img/category/pescado_c.jpg" class="card-img-top" alt="Pescado">
 							  <div class="card-body">
 							    <h5 class="card-title">Pescado</h5>
 							    <p class="card-text d-none d-md-block">La cocina a base de pescados y mariscos es variada y llena de matices regionales, consigue lo necesario en nuestra plataforma.</p>
-							    <p class="card-text"><a href="#" class="btn btn-warning">Ver más de esto <span class="material-icons md-18 align-middle">search</span></a></p>
+							    <p class="card-text"><a href="#" class="btn btn-warning">Ver más <span class="d-none d-md-inline-flex">de esto </span><span class="material-icons md-18 align-middle d-none d-md-inline-flex">search</span></a></p>
 							  </div>
 							</div>
 						</div>
@@ -296,7 +300,9 @@
 			</div>       
 			-->
 
-			<h2><span class="badge badge-pill badge-danger mb-0">SOLO HOY</span> ¡Ve las increíbles ofertas a través de las categorías!</h2>
+			<h2 class="d-none d-md-block"><span class="badge badge-pill badge-danger mb-0">SOLO HOY</span> ¡Ve las increíbles ofertas a través de las categorías!</h2>
+			<h2 class="d-block d-md-none"><span class="badge badge-pill badge-danger mb-0">POR HOY</span> ¡Habrá estas increíbles ofertas!</h2>
+
 
 			<div class="barra-nav border-top border-bottom mt-4 mt-lg-5 mb-4 py-3">
 
