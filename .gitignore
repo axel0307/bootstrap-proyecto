@@ -1,2 +1,3 @@
-bootstrap-source-files/scss
-/bootstrap-source-files
+bootstrap-source-files
+bootstrap-source-files/*
+bootstrap-source-files/
